@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
-  },
+    "dev": "tsx src/server.ts",
+    "postinstall": "npx prisma generate",
+    "production": "tsx src/server.ts",
+    "start": "npm install && npx prisma generate && tsx watch src/server.ts"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -22,4 +25,5 @@
     "fastify": "^4.28.0",
     "tsx": "^4.15.5"
   }
+
 }
