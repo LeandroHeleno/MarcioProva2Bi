@@ -25,7 +25,7 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
           properties: {
             id: { type: 'string' },
             name: { type: 'string' },
-            email: { type: 'string' } // Corrigido de 'demail' para 'email'
+            email: { type: 'string' } 
           }
         }
       }

@@ -21,7 +21,7 @@ const start = async () => {
           description: 'API documentation for the Fastify server',
           version: '1.0.0'
         },
-        host: 'localhost:3333',
+        host: 'https://marcio-prova2-bi.vercel.app/',
         schemes: ['http'],
         consumes: ['application/json'],
         produces: ['application/json'],
@@ -47,7 +47,7 @@ const start = async () => {
     await app.register(routes);
 
     await app.listen({ port: 3333 });
-    console.log('Server is running on http://localhost:3333');
+    console.log('Server is running on http://https://marcio-prova2-bi.vercel.app/localhost:3333');
   } catch (err) {
     app.log.error(err);
     process.exit(1);
